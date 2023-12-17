@@ -7,4 +7,166 @@
 <p>Some well-known people died, some unknown people were born. People snowflakes, but how amazing is this journey from heaven to earth. And is there a return?</p>
 ]]></content>
   </entry>
+  <entry>
+    <title>Spacemacs Tutorial</title>
+    <url>/2023/12/17/Spacemacs-Tutorial/</url>
+    <content><![CDATA[<p>I’m learning Spacemacs (with <strong>Vim key bindings</strong> (check out this <a href="https://scaron.info/blog/vim-keyboard-shortcuts.html">blog post by Stéphane Caron</a>)) and would like to share some of my notes here.<br>For detailed instructions and a deeper understanding please refer to <a href="https://www.spacemacs.org/doc/QUICK_START.html">Spacemacs’ official documentation</a>.</p>
+<h2 id="Modal-editing-with-Vim"><a href="#Modal-editing-with-Vim" class="headerlink" title="Modal editing with Vim"></a>Modal editing with Vim</h2><p><img src="/2023/12/17/Spacemacs-Tutorial/vim.jpg" alt="modal editor"></p>
+<p><code>ESC</code> Key returns you from other modes to the normal mode.</p>
+<p>You can learn Vim key bindings with <code>(SPACE h T v)</code>, the Emacs Evil Tutor :-p.<br>Of course there are many other wonderful and interactive tutorials out there…</p>
+<hr>
+<h3 id="Navigation-in-NORMAL-mode"><a href="#Navigation-in-NORMAL-mode" class="headerlink" title="Navigation in NORMAL mode"></a>Navigation in <code>NORMAL</code> mode</h3><p><img src="/2023/12/17/Spacemacs-Tutorial/nav.jpg" alt="modal editor"></p>
+<h4 id="word-level"><a href="#word-level" class="headerlink" title="word-level"></a>word-level</h4><ul>
+<li><code>w</code> forward motion by word</li>
+<li><code>b</code> backward motion by word</li>
+<li><code>e</code> forward motion by <em>end</em> of word</li>
+</ul>
+<h4 id="line-level"><a href="#line-level" class="headerlink" title="line-level"></a>line-level</h4><ul>
+<li><code>0</code> the beginning of line</li>
+<li><code>$</code> end of line</li>
+<li><code>^</code> first non-empty character of the line</li>
+</ul>
+<h4 id="buffer-level"><a href="#buffer-level" class="headerlink" title="buffer-level"></a>buffer-level</h4><ul>
+<li><code>(Ctrl U)</code> scrolls up</li>
+<li><code>(Ctrl D)</code> scrolls down</li>
+<li><code>gg</code> beginning of buffer</li>
+<li><code>G</code> end of buffer</li>
+</ul>
+<h4 id="moving-the-cursor"><a href="#moving-the-cursor" class="headerlink" title="moving the cursor"></a>moving the cursor</h4><ul>
+<li><code>H</code> to the highest line of the screen</li>
+<li><code>M</code> to the middle line of the screen</li>
+<li><code>L</code> to the lowest line of the screen</li>
+</ul>
+<h4 id="find-f-F"><a href="#find-f-F" class="headerlink" title="find f|F"></a>find <code>f|F</code></h4><ul>
+<li><code>f</code> find in forward direction</li>
+<li><code>F</code> find in backward direction</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">fo </span><br><span class="line">&gt;&gt;&gt; Cursor jumps to the next first occurrence of the letter &quot;o&quot;.</span><br><span class="line">Fo </span><br><span class="line">&gt;&gt;&gt; Cursor jumps to the last immediate occurrence of the letter &quot;o&quot;.</span><br></pre></td></tr></table></figure>
+
+<h4 id="to-t-T-a-variant-of-find"><a href="#to-t-T-a-variant-of-find" class="headerlink" title="to t|T (a variant of find)"></a>to <code>t|T</code> (a variant of find)</h4><p><img src="/2023/12/17/Spacemacs-Tutorial/find.jpg" alt="modal editor"></p>
+<hr>
+<h3 id="Editing-Commands"><a href="#Editing-Commands" class="headerlink" title="Editing Commands"></a>Editing Commands</h3><h4 id="Open"><a href="#Open" class="headerlink" title="Open"></a>Open</h4><ul>
+<li><code>o</code> opens a line below and enters <code>INSERT</code> mode.</li>
+<li><code>O</code> opens a line above and enters <code>INSERT</code> mode.</li>
+</ul>
+<h4 id="Delete"><a href="#Delete" class="headerlink" title="Delete"></a>Delete</h4><p>Deletion combines with movement commands.</p>
+<ul>
+<li><code>dw</code> deletes a word</li>
+<li><code>de</code> deletes from cursor position to end of the word</li>
+<li><code>dd</code> deletes the line</li>
+<li><code>x</code> deletes a single character at cursor position (like on a typewriter!)</li>
+</ul>
+<h4 id="Change"><a href="#Change" class="headerlink" title="Change"></a>Change</h4><p>Change combines with movement commands. Think of it as delete and enter into <code>INSERT</code> mode.</p>
+<ul>
+<li><code>cw</code> changes the word, i.e. deletes the word and puts you in <code>INSERT</code> mode.</li>
+<li><code>ce</code> deletes the word from cursor position to end of the word and enters <code>INSERT</code> mode.</li>
+<li><code>cc</code> deletes the line and enters <code>INSERT</code> mode.</li>
+</ul>
+<h4 id="Replace"><a href="#Replace" class="headerlink" title="Replace"></a>Replace</h4><ul>
+<li><code>r</code> replaces single character at cursor position, after replacement in <code>NORMAL</code> mode.</li>
+<li><code>R</code> enters and remains in <code>REPLACE</code> mode until you switch mode.</li>
+</ul>
+<h4 id="Undo-and-Redo"><a href="#Undo-and-Redo" class="headerlink" title="Undo and Redo"></a>Undo and Redo</h4><ul>
+<li><code>u</code> to undo changes.</li>
+<li><code>Ctrl r</code> to redo.</li>
+</ul>
+<hr>
+<h3 id="Copy-and-Paste"><a href="#Copy-and-Paste" class="headerlink" title="Copy and Paste"></a>Copy and Paste</h3><h4 id="y-for-Yank-and-p-for-Paste"><a href="#y-for-Yank-and-p-for-Paste" class="headerlink" title="y for Yank and p for Paste"></a><code>y</code> for Yank and <code>p</code> for Paste</h4><p>These two also combines with movement commands.</p>
+<ul>
+<li><code>yy</code> copies current line.</li>
+<li><code>yw</code> copies the word.</li>
+<li><code>p</code> pastes at cursor position.</li>
+</ul>
+<blockquote>
+<p>If you want to move a line, you can use <code>dd</code> to delete the line and then <code>p</code> to paste it wherever you want.</p>
+</blockquote>
+<h3 id="VISUAL-for-text-selection"><a href="#VISUAL-for-text-selection" class="headerlink" title="--VISUAL-- for text selection"></a><code>--VISUAL--</code> for text selection</h3><p>To select blocks of text we use <code>VISUAL</code> mode and navigate to make a selection.<br>Then we can use <code>y</code> for copying the selection and automatically returns to <code>NORMAL</code> mode.</p>
+<ul>
+<li><code>--VISUAL LINE--</code> selects by lines</li>
+<li><code>--VISUAL BLOCK--</code> selects by rectangular blocks of text</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">`~` flips the case of selected text.</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="Counts"><a href="#Counts" class="headerlink" title="Counts"></a>Counts</h3><p>We can use numbers for quick and specific movements.<br>For instance, <code>&lt;number&gt;j</code> &#x3D; pressing <code>j</code> &lt;number&gt; times.<br>Therefore:</p>
+<ul>
+<li><code>4k</code> moves cursor up 4 lines</li>
+<li><code>v3e</code> enters <code>VISUAL</code> mode, select 3 words (select to the end of the third word).</li>
+<li><code>d7w</code> or <code>7dw</code> deletes 7 words counting from the word the cursor is at.</li>
+</ul>
+<p>Since counts are so useful, there’s a trick that facilitates the use of line numbers. Instead of counting or mentally subtracting line numbers, we can use relative line numbers!</p>
+<h4 id="Relative-Line-Numbers"><a href="#Relative-Line-Numbers" class="headerlink" title="Relative Line Numbers"></a>Relative Line Numbers</h4><p><img src="/2023/12/17/Spacemacs-Tutorial/rel.png" alt="modal editor"></p>
+<h5 id="Setting-up-relative-line-numbers"><a href="#Setting-up-relative-line-numbers" class="headerlink" title="Setting up relative line numbers"></a>Setting up relative line numbers</h5><p>In <code>.spacemcs</code>, set <code>dotspacemacs-line-numbers &#39;relative</code>.</p>
+<hr>
+<h3 id="Modifiers"><a href="#Modifiers" class="headerlink" title="Modifiers"></a>Modifiers</h3><h4 id="a-for-Around-and-i-for-Inside"><a href="#a-for-Around-and-i-for-Inside" class="headerlink" title="a for Around and i for Inside"></a><code>a</code> for Around and <code>i</code> for Inside</h4><ul>
+<li><code>ci[</code> changes (deletes) everything inside square brackets, enter <code>INSERT</code> mode.</li>
+<li><code>di(</code> deletes everything inside parentheses, remains in <code>NORMAL</code> mode.</li>
+<li><code>da(</code> deletes also the parentheses around, remains in <code>NORMAL</code> mode.</li>
+</ul>
+<hr>
+<h3 id="Miscellaneous"><a href="#Miscellaneous" class="headerlink" title="Miscellaneous"></a>Miscellaneous</h3><h4 id="Matching-Parenthesis"><a href="#Matching-Parenthesis" class="headerlink" title="Matching Parenthesis"></a>Matching Parenthesis</h4><p>If you have your cursor on one of them, <code>%</code> will show you its match.</p>
+<h4 id="Case-Flip"><a href="#Case-Flip" class="headerlink" title="Case Flip"></a>Case Flip</h4><p><code>~</code> flips the case of selected text.</p>
+<h4 id="The-lazy-dot"><a href="#The-lazy-dot" class="headerlink" title="The lazy dot ."></a>The lazy dot <code>.</code></h4><p><code>.</code> simply repeats the previous editing command that Vim made.</p>
+<hr>
+<h2 id="The-dotspacemacs-file"><a href="#The-dotspacemacs-file" class="headerlink" title="The dotspacemacs file"></a>The <code>dotspacemacs</code> file</h2><p><code>.spacemacs</code> is Spacemacs’ configuration file.<br>The dotfile is written in emacs-lisp language, <code>;;</code> is used for comments. </p>
+<p>Most used commands related to the dotfile:</p>
+<ul>
+<li><code>(SPACE f e)</code> shortcut combo opens a list of commands.<ul>
+<li><code>d</code> -&gt; opens the dotfile</li>
+<li><code>R</code> -&gt; reloads configuration</li>
+</ul>
+</li>
+</ul>
+<p>Usually the most important section of the dotfile is under <code>dotspacemacs-configuration-layers</code>.</p>
+<hr>
+<h2 id="Spacemacs-GUI-Spaceline"><a href="#Spacemacs-GUI-Spaceline" class="headerlink" title="Spacemacs GUI - Spaceline"></a>Spacemacs GUI - Spaceline</h2><p>Spaceline is spacemacs’ powerline.</p>
+<p><img src="/2023/12/17/Spacemacs-Tutorial/spaceline-dotfile.png" alt="spaceline"></p>
+<p>The number displayed on the left corner is the window number.<br>  Other information on the line:</p>
+<ul>
+<li>status of the file <ul>
+<li><code>*</code> shows that the file has been modified but the changes are not saved.</li>
+</ul>
+</li>
+<li>size of the file</li>
+<li>filename</li>
+<li>the current major mode <ul>
+<li><code>Emacs-Lisp</code>, <code>Org</code>, <code>Markdown</code> etc.<ul>
+<li>In <code>Emacs-Lisp</code> major mode, use <code>(SPACE c L)</code> to toggle comments.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>On the right of the powerline: cursor position<ul>
+<li><code>&lt;line&gt;:&lt;character&gt; &lt;percentage through the file&gt;</code></li>
+</ul>
+</li>
+</ul>
+<p>Under the spaceline there’s usually an indication of the current editing mode, in the above example it is the <code>INSERT</code> mode.  </p>
+<hr>
+<h2 id="Bits-and-pieces"><a href="#Bits-and-pieces" class="headerlink" title="Bits and pieces"></a>Bits and pieces</h2><h3 id="Save-Buffer"><a href="#Save-Buffer" class="headerlink" title="Save Buffer"></a>Save Buffer</h3><p>Using the familiar commandline mode (led by the <code>:</code> key):</p>
+<ul>
+<li><code>:w</code> writes buffer to file. </li>
+<li><code>:q!</code> quits without saving any changes.<ul>
+<li><code>:q</code> quits (current window).</li>
+<li><code>:qa</code> quits all windows.</li>
+</ul>
+</li>
+</ul>
+<p>A more Spacemacs-way of saving the buffer is <code>(SPACE f s)</code>. </p>
+<h3 id="Font"><a href="#Font" class="headerlink" title="Font"></a>Font</h3><h4 id="Setting-default-font-and-font-size"><a href="#Setting-default-font-and-font-size" class="headerlink" title="Setting default font and font size"></a>Setting default font and font size</h4><ol>
+<li>Search through the dotfile using vim syntax: <code>/font</code>.</li>
+<li>Modify <code>dotspacemacs-default-font</code>.</li>
+<li>Save the dotfile and restart emacs.</li>
+</ol>
+<h3 id="Zoom-in-and-out"><a href="#Zoom-in-and-out" class="headerlink" title="Zoom-in and -out"></a>Zoom-in and -out</h3><p><code>(SPACE z f)</code> enters zoom frame transient state. Type <code>q</code> to quit.</p>
+<h3 id="Toggle-line-wrap"><a href="#Toggle-line-wrap" class="headerlink" title="Toggle line wrap"></a>Toggle line wrap</h3><p><code>(SPACE t l)</code> toggles line wrap.</p>
+]]></content>
+      <categories>
+        <category>tutorial</category>
+      </categories>
+      <tags>
+        <tag>spacemacs</tag>
+        <tag>vim</tag>
+      </tags>
+  </entry>
 </search>

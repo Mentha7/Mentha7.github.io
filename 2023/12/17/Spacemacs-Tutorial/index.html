@@ -20,28 +20,40 @@
     var CONFIG = {"hostname":"mentha7.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":"default"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="blackfooted">
-<meta property="og:url" content="https://mentha7.github.io/index.html">
+  <meta name="description" content="I’m learning Spacemacs (with Vim key bindings (check out this blog post by Stéphane Caron)) and would like to share some of my notes here.For detailed instructions and a deeper understanding please re">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Spacemacs Tutorial">
+<meta property="og:url" content="https://mentha7.github.io/2023/12/17/Spacemacs-Tutorial/index.html">
 <meta property="og:site_name" content="blackfooted">
+<meta property="og:description" content="I’m learning Spacemacs (with Vim key bindings (check out this blog post by Stéphane Caron)) and would like to share some of my notes here.For detailed instructions and a deeper understanding please re">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://mentha7.github.io/2023/12/17/Spacemacs-Tutorial/vim.jpg">
+<meta property="og:image" content="https://mentha7.github.io/2023/12/17/Spacemacs-Tutorial/nav.jpg">
+<meta property="og:image" content="https://mentha7.github.io/2023/12/17/Spacemacs-Tutorial/find.jpg">
+<meta property="og:image" content="https://mentha7.github.io/2023/12/17/Spacemacs-Tutorial/rel.png">
+<meta property="og:image" content="https://mentha7.github.io/2023/12/17/Spacemacs-Tutorial/spaceline-dotfile.png">
+<meta property="article:published_time" content="2023-12-17T13:53:25.000Z">
+<meta property="article:modified_time" content="2023-12-17T18:51:09.903Z">
 <meta property="article:author" content="Jingwen">
+<meta property="article:tag" content="spacemacs">
+<meta property="article:tag" content="vim">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://mentha7.github.io/2023/12/17/Spacemacs-Tutorial/vim.jpg">
 
-<link rel="canonical" href="https://mentha7.github.io/">
+<link rel="canonical" href="https://mentha7.github.io/2023/12/17/Spacemacs-Tutorial/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>blackfooted - welcome to my mental space</title>
+  <title>Spacemacs Tutorial | blackfooted</title>
   
 
 
@@ -156,9 +168,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
@@ -174,10 +187,9 @@
       <meta itemprop="name" content="blackfooted">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/12/17/Spacemacs-Tutorial/" class="post-title-link" itemprop="url">Spacemacs Tutorial</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Spacemacs Tutorial
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -210,7 +222,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>I’m learning Spacemacs (with <strong>Vim key bindings</strong> (check out this <a target="_blank" rel="noopener" href="https://scaron.info/blog/vim-keyboard-shortcuts.html">blog post by Stéphane Caron</a>)) and would like to share some of my notes here.<br>For detailed instructions and a deeper understanding please refer to <a target="_blank" rel="noopener" href="https://www.spacemacs.org/doc/QUICK_START.html">Spacemacs’ official documentation</a>.</p>
+        <p>I’m learning Spacemacs (with <strong>Vim key bindings</strong> (check out this <a target="_blank" rel="noopener" href="https://scaron.info/blog/vim-keyboard-shortcuts.html">blog post by Stéphane Caron</a>)) and would like to share some of my notes here.<br>For detailed instructions and a deeper understanding please refer to <a target="_blank" rel="noopener" href="https://www.spacemacs.org/doc/QUICK_START.html">Spacemacs’ official documentation</a>.</p>
 <h2 id="Modal-editing-with-Vim"><a href="#Modal-editing-with-Vim" class="headerlink" title="Modal editing with Vim"></a>Modal editing with Vim</h2><p><img src="/2023/12/17/Spacemacs-Tutorial/vim.jpg" alt="modal editor"></p>
 <p><code>ESC</code> Key returns you from other modes to the normal mode.</p>
 <p>You can learn Vim key bindings with <code>(SPACE h T v)</code>, the Emacs Evil Tutor :-p.<br>Of course there are many other wonderful and interactive tutorials out there…</p>
@@ -361,25 +373,35 @@
 <h3 id="Zoom-in-and-out"><a href="#Zoom-in-and-out" class="headerlink" title="Zoom-in and -out"></a>Zoom-in and -out</h3><p><code>(SPACE z f)</code> enters zoom frame transient state. Type <code>q</code> to quit.</p>
 <h3 id="Toggle-line-wrap"><a href="#Toggle-line-wrap" class="headerlink" title="Toggle line wrap"></a>Toggle line wrap</h3><p><code>(SPACE t l)</code> toggles line wrap.</p>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
+          <div class="post-tags">
+              <a href="/tags/spacemacs/" rel="tag"># spacemacs</a>
+              <a href="/tags/vim/" rel="tag"># vim</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/12/01/Salts/" rel="prev" title="Salts">
+      <i class="fa fa-chevron-left"></i> Salts
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
       </footer>
+    
   </article>
   
   
   
-
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
-  </nav>
 
 
 
@@ -431,6 +453,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Modal-editing-with-Vim"><span class="nav-number">1.</span> <span class="nav-text">Modal editing with Vim</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Navigation-in-NORMAL-mode"><span class="nav-number">1.1.</span> <span class="nav-text">Navigation in NORMAL mode</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#word-level"><span class="nav-number">1.1.1.</span> <span class="nav-text">word-level</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#line-level"><span class="nav-number">1.1.2.</span> <span class="nav-text">line-level</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#buffer-level"><span class="nav-number">1.1.3.</span> <span class="nav-text">buffer-level</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#moving-the-cursor"><span class="nav-number">1.1.4.</span> <span class="nav-text">moving the cursor</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#find-f-F"><span class="nav-number">1.1.5.</span> <span class="nav-text">find f|F</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#to-t-T-a-variant-of-find"><span class="nav-number">1.1.6.</span> <span class="nav-text">to t|T (a variant of find)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Editing-Commands"><span class="nav-number">1.2.</span> <span class="nav-text">Editing Commands</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Open"><span class="nav-number">1.2.1.</span> <span class="nav-text">Open</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Delete"><span class="nav-number">1.2.2.</span> <span class="nav-text">Delete</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Change"><span class="nav-number">1.2.3.</span> <span class="nav-text">Change</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Replace"><span class="nav-number">1.2.4.</span> <span class="nav-text">Replace</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Undo-and-Redo"><span class="nav-number">1.2.5.</span> <span class="nav-text">Undo and Redo</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Copy-and-Paste"><span class="nav-number">1.3.</span> <span class="nav-text">Copy and Paste</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#y-for-Yank-and-p-for-Paste"><span class="nav-number">1.3.1.</span> <span class="nav-text">y for Yank and p for Paste</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#VISUAL-for-text-selection"><span class="nav-number">1.4.</span> <span class="nav-text">--VISUAL-- for text selection</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Counts"><span class="nav-number">1.5.</span> <span class="nav-text">Counts</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Relative-Line-Numbers"><span class="nav-number">1.5.1.</span> <span class="nav-text">Relative Line Numbers</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Setting-up-relative-line-numbers"><span class="nav-number">1.5.1.1.</span> <span class="nav-text">Setting up relative line numbers</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Modifiers"><span class="nav-number">1.6.</span> <span class="nav-text">Modifiers</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#a-for-Around-and-i-for-Inside"><span class="nav-number">1.6.1.</span> <span class="nav-text">a for Around and i for Inside</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Miscellaneous"><span class="nav-number">1.7.</span> <span class="nav-text">Miscellaneous</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Matching-Parenthesis"><span class="nav-number">1.7.1.</span> <span class="nav-text">Matching Parenthesis</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Case-Flip"><span class="nav-number">1.7.2.</span> <span class="nav-text">Case Flip</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#The-lazy-dot"><span class="nav-number">1.7.3.</span> <span class="nav-text">The lazy dot .</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#The-dotspacemacs-file"><span class="nav-number">2.</span> <span class="nav-text">The dotspacemacs file</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Spacemacs-GUI-Spaceline"><span class="nav-number">3.</span> <span class="nav-text">Spacemacs GUI - Spaceline</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Bits-and-pieces"><span class="nav-number">4.</span> <span class="nav-text">Bits and pieces</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Save-Buffer"><span class="nav-number">4.1.</span> <span class="nav-text">Save Buffer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Font"><span class="nav-number">4.2.</span> <span class="nav-text">Font</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Setting-default-font-and-font-size"><span class="nav-number">4.2.1.</span> <span class="nav-text">Setting default font and font size</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Zoom-in-and-out"><span class="nav-number">4.3.</span> <span class="nav-text">Zoom-in and -out</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Toggle-line-wrap"><span class="nav-number">4.4.</span> <span class="nav-text">Toggle line wrap</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
