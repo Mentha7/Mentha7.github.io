@@ -11,13 +11,13 @@
     <title>Spacemacs Tutorial</title>
     <url>/2023/12/17/Spacemacs-Tutorial/</url>
     <content><![CDATA[<p>I’m learning Spacemacs (with <strong>Vim key bindings</strong> (check out this <a href="https://scaron.info/blog/vim-keyboard-shortcuts.html">blog post by Stéphane Caron</a>)) and would like to share some of my notes here.<br>For detailed instructions and a deeper understanding please refer to <a href="https://www.spacemacs.org/doc/QUICK_START.html">Spacemacs’ official documentation</a>.</p>
-<h2 id="Modal-editing-with-Vim"><a href="#Modal-editing-with-Vim" class="headerlink" title="Modal editing with Vim"></a>Modal editing with Vim</h2><p><img src="/2023/12/17/Spacemacs-Tutorial/vim.jpg" alt="modal editor"></p>
+<h2 id="Modal-editing-with-Vim"><a href="#Modal-editing-with-Vim" class="headerlink" title="Modal editing with Vim"></a>Modal editing with Vim</h2><p><img src="/2023/12/17/Spacemacs-Tutorial/vim.jpg" alt="various editing modes"></p>
 <span id="more"></span>
 
 <p><code>ESC</code> Key returns you from other modes to the normal mode.</p>
 <p>You can learn Vim key bindings with <code>(SPACE h T v)</code>, the Emacs Evil Tutor :-p.<br>Of course there are many other wonderful and interactive tutorials out there…</p>
 <hr>
-<h3 id="Navigation-in-NORMAL-mode"><a href="#Navigation-in-NORMAL-mode" class="headerlink" title="Navigation in NORMAL mode"></a>Navigation in <code>NORMAL</code> mode</h3><p><img src="/2023/12/17/Spacemacs-Tutorial/nav.jpg" alt="modal editor"></p>
+<h3 id="Navigation-in-NORMAL-mode"><a href="#Navigation-in-NORMAL-mode" class="headerlink" title="Navigation in NORMAL mode"></a>Navigation in <code>NORMAL</code> mode</h3><p><img src="/2023/12/17/Spacemacs-Tutorial/nav.jpg" alt="Vim basic navigation"></p>
 <h4 id="word-level"><a href="#word-level" class="headerlink" title="word-level"></a>word-level</h4><ul>
 <li><code>w</code> forward motion by word</li>
 <li><code>b</code> backward motion by word</li>
@@ -45,7 +45,7 @@
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">fo </span><br><span class="line">&gt;&gt;&gt; Cursor jumps to the next first occurrence of the letter &quot;o&quot;.</span><br><span class="line">Fo </span><br><span class="line">&gt;&gt;&gt; Cursor jumps to the last immediate occurrence of the letter &quot;o&quot;.</span><br></pre></td></tr></table></figure>
 
-<h4 id="to-t-T-a-variant-of-find"><a href="#to-t-T-a-variant-of-find" class="headerlink" title="to t|T (a variant of find)"></a>to <code>t|T</code> (a variant of find)</h4><p><img src="/2023/12/17/Spacemacs-Tutorial/find.jpg" alt="modal editor"></p>
+<h4 id="to-t-T-a-variant-of-find"><a href="#to-t-T-a-variant-of-find" class="headerlink" title="to t|T (a variant of find)"></a>to <code>t|T</code> (a variant of find)</h4><p><img src="/2023/12/17/Spacemacs-Tutorial/find.jpg" alt="a simple example"></p>
 <hr>
 <h3 id="Editing-Commands"><a href="#Editing-Commands" class="headerlink" title="Editing Commands"></a>Editing Commands</h3><h4 id="Open"><a href="#Open" class="headerlink" title="Open"></a>Open</h4><ul>
 <li><code>o</code> opens a line below and enters <code>INSERT</code> mode.</li>
@@ -97,7 +97,7 @@
 <li><code>d7w</code> or <code>7dw</code> deletes 7 words counting from the word the cursor is at.</li>
 </ul>
 <p>Since counts are so useful, there’s a trick that facilitates the use of line numbers. Instead of counting or mentally subtracting line numbers, we can use relative line numbers!</p>
-<h4 id="Relative-Line-Numbers"><a href="#Relative-Line-Numbers" class="headerlink" title="Relative Line Numbers"></a>Relative Line Numbers</h4><p><img src="/2023/12/17/Spacemacs-Tutorial/rel.png" alt="modal editor"></p>
+<h4 id="Relative-Line-Numbers"><a href="#Relative-Line-Numbers" class="headerlink" title="Relative Line Numbers"></a>Relative Line Numbers</h4><p><img src="/2023/12/17/Spacemacs-Tutorial/rel.png" alt="highly recommended"></p>
 <h5 id="Setting-up-relative-line-numbers"><a href="#Setting-up-relative-line-numbers" class="headerlink" title="Setting up relative line numbers"></a>Setting up relative line numbers</h5><p>In <code>.spacemcs</code>, set <code>dotspacemacs-line-numbers &#39;relative</code>.</p>
 <hr>
 <h3 id="Modifiers"><a href="#Modifiers" class="headerlink" title="Modifiers"></a>Modifiers</h3><h4 id="a-for-Around-and-i-for-Inside"><a href="#a-for-Around-and-i-for-Inside" class="headerlink" title="a for Around and i for Inside"></a><code>a</code> for Around and <code>i</code> for Inside</h4><ul>
