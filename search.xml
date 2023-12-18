@@ -13,7 +13,7 @@
   <entry>
     <title>Spacemacs Tutorial</title>
     <url>/2023/12/17/Spacemacs-Tutorial/</url>
-    <content><![CDATA[<p>I’m learning Spacemacs (with <strong>Vim key bindings</strong> (check out this <a href="https://scaron.info/blog/vim-keyboard-shortcuts.html">blog post by Stéphane Caron</a>)) and would like to share some of my notes here.<br>For detailed instructions and a deeper understanding please refer to <a href="https://www.spacemacs.org/doc/QUICK_START.html">Spacemacs’ official documentation</a>.</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>I’m learning Spacemacs (with <strong>Vim key bindings</strong> (check out this <a href="https://scaron.info/blog/vim-keyboard-shortcuts.html">blog post by Stéphane Caron</a>)) and would like to share some of my notes here.<br>For detailed instructions and a deeper understanding please refer to <a href="https://www.spacemacs.org/doc/QUICK_START.html">Spacemacs’ official documentation</a>.</p>
 <h2 id="Modal-editing-with-Vim"><a href="#Modal-editing-with-Vim" class="headerlink" title="Modal editing with Vim"></a>Modal editing with Vim</h2><p><img src="/2023/12/17/Spacemacs-Tutorial/vim.jpg" alt="various editing modes"></p>
 <span id="more"></span>
 
