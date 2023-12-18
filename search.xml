@@ -98,7 +98,7 @@
 </ul>
 <p>Since counts are so useful, there’s a trick that facilitates the use of line numbers. Instead of counting or mentally subtracting line numbers, we can use relative line numbers!</p>
 <h4 id="Relative-Line-Numbers"><a href="#Relative-Line-Numbers" class="headerlink" title="Relative Line Numbers"></a>Relative Line Numbers</h4><p><img src="/2023/12/17/Spacemacs-Tutorial/rel.png" alt="highly recommended"></p>
-<h5 id="Setting-up-relative-line-numbers"><a href="#Setting-up-relative-line-numbers" class="headerlink" title="Setting up relative line numbers"></a>Setting up relative line numbers</h5><p>In <code>.spacemcs</code>, set <code>dotspacemacs-line-numbers &#39;relative</code>.</p>
+<h5 id="Setting-up-relative-line-numbers"><a href="#Setting-up-relative-line-numbers" class="headerlink" title="Setting up relative line numbers"></a>Setting up relative line numbers</h5><p>In <code>.spacemacs</code>, set <code>dotspacemacs-line-numbers &#39;relative</code>.</p>
 <hr>
 <h3 id="Modifiers"><a href="#Modifiers" class="headerlink" title="Modifiers"></a>Modifiers</h3><h4 id="a-for-Around-and-i-for-Inside"><a href="#a-for-Around-and-i-for-Inside" class="headerlink" title="a for Around and i for Inside"></a><code>a</code> for Around and <code>i</code> for Inside</h4><ul>
 <li><code>ci[</code> changes (deletes) everything inside square brackets, enter <code>INSERT</code> mode.</li>
