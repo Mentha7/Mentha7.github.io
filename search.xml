@@ -174,4 +174,21 @@
         <tag>vim</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Org Mode</title>
+    <url>/2023/12/19/Org-Mode/</url>
+    <content><![CDATA[<h1 id="Org"><a href="#Org" class="headerlink" title="Org"></a>Org</h1><p><img src="/2023/12/19/Org-Mode/org-mode-unicorn.svg"><br>This is a post dedicated to the <a href="https://www.spacemacs.org/layers/+emacs/org/README.html">Org Layer</a> in Spacemacs (Org Mode is a <a href="https://www.gnu.org/software/emacs/">GNU Emacs</a> mode, so <strong>not</strong> limited to Spacemacs!). Check out <a href="https://orgmode.org/">Org Mode</a> and the <a href="https://orgmode.org/manual/index.html">Org Manual</a> to see what <strong>Org</strong> is all about. I got recommended years ago but didn’t have the time and leisure back then to really learn and use it.</p>
+<p>Currently I mainly use Org Mode in Spacemacs for note-taking and jotting down ideas.<br>For the next step I plan to use org-roam to build a knowledge base and I’ll also begin using Org as my main task manager after the holiday. For any of you that are into organizing tasks, I <em>highly recommend</em> you to try Org Mode, with whichever editor you prefer that supports it. </p>
+<p>For programmers or people that aspire to learn coding, Org-babel makes <strong><a href="https://www-cs-faculty.stanford.edu/~knuth/lp.html">literate programming</a></strong> possible by enabling the execution of source code within Org documents.</p>
+<h2 id="Existing-Amazing-Tutorials"><a href="#Existing-Amazing-Tutorials" class="headerlink" title="Existing Amazing Tutorials"></a>Existing Amazing Tutorials</h2><p><a href="https://out-of-cheese-error.netlify.app/spacemacs-config">OutOfCheeseError-An Annotated Spacemacs</a> is one of my favorites.</p>
+<p>To be continued…</p>
+]]></content>
+      <categories>
+        <category>tutorial</category>
+      </categories>
+      <tags>
+        <tag>spacemacs</tag>
+        <tag>org mode</tag>
+      </tags>
+  </entry>
 </search>
