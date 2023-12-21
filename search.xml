@@ -1,9 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Butterfly</title>
+    <url>/2023/12/20/Butterfly/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
+<p>The trees had no leaves yet, but the buds were full of sap and already swelling and bursting. In every bud you could feel the concentrated presence of young shoots, flowers, fruits-to-be, lying in wait and ready to burst out to the light.<br><strong>Day and night in the middle of winter, the great miracle of spring was silently, secretly being prepared beneath the dry bark.</strong><br>                            – Nikos Kazantzakis, Zorba the Greek</p>
+</blockquote>
+<p>The two books that really touched me this year are <a href="https://en.wikipedia.org/wiki/Zorba_the_Greek"><strong>Life and Times of Alexis Zorbas (Zorba the Greek)</strong></a> by Nikos Kazantzakis and <a href="https://en.wikipedia.org/wiki/Flowers_for_Algernon"><strong>Flowers for Algernon</strong></a> by Daniel Keyes, a soft SF from the 1970s (❤️ I really really like this one!). I will probably write separate posts for both of them. </p>
+<p>Here, I just want to share a simple tribute to the great wonder of life. </p>
+<p>Butterfly has been my mental image for <strong>transformation</strong>, beautiful, right? Unexpectedly, 2023 for me is marked with this symbol 🦋. I still vividly recall my amazement, seeing a butterfly in the middle of the sea. Where could such a little creature land?</p>
+<p>Later, I watched <a href="https://www.youtube.com/watch?v=yj8G17dessg">a timelapse video of a molting cicada</a>. Something inside me resonates with it. I expected something in my life to change drastically and also feared it. </p>
+<p>Through this video I also found that Kanzantzakis may have romanticised at least a bit when he wrote the following because the hatching process takes much longer than he described and the crumpled wings at first should be normal (How else would they fit in the cocoon?). But I get his idea, <strong>the butterfly needed to come out on its own time and strength</strong>. </p>
+<blockquote>
+<p>I remembered one morning when I discovered a cocoon in the bark of a tree, just as the butterfly was making a hole in its case and preparing to come out. I waited a while, but it was too long appearing and I was impatient. I bent over it and breathed on it to warm it. I warmed it as quickly as I could and the miracle began to happen before my eyes, faster than life. The case opened, the butterfly started slowly crawling out and I shall never forget my horror when I saw how its wings were folded back and crumpled; the wretched butterfly tried with its whole trembling body to unfold them. Bending over it, I tried to help it with my breath. In vain. It needed to be hatched out patiently and the unfolding of the wings should be a gradual process in the sun. Now it was too late. My breath had forced the butterfly to appear, all crumpled, before its time. It struggled desperately and, a few seconds later, died in the palm of my hand.</p>
+<p>That little body is, I do believe, the greatest weight I have on my conscience. For I realise today that it is a mortal sin to violate the great laws of nature. We should not hurry, we should not be impatient, but we should confidently obey the eternal rhythm.</p>
+<p>I sat on a rock to absorb this New Year’s thought. Ah, if only that little butterfly could always flutter before me to show me the way.</p>
+<p>– Zorba the Greek, X</p>
+</blockquote>
+<p>Transformation is not an easy process, with resistance it will bring much pain. But we need to kill the old self to embrace the new. I want to send this messasge to anyone who feels trapped in a cocoon or as a caterpillar: Believe and eventually you can fly. </p>
+]]></content>
+      <categories>
+        <category>personal</category>
+      </categories>
+      <tags>
+        <tag>growth</tag>
+        <tag>thoughts</tag>
+        <tag>reading</tag>
+        <tag>love</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Org Mode</title>
+    <url>/2023/12/19/Org-Mode/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Org"><a href="#Org" class="headerlink" title="Org"></a>Org</h1><p><img src="/2023/12/19/Org-Mode/org-mode-unicorn.svg"><br>This is a post dedicated to the <a href="https://www.spacemacs.org/layers/+emacs/org/README.html">Org Layer</a> in Spacemacs (Org Mode is a <a href="https://www.gnu.org/software/emacs/">GNU Emacs</a> mode, so <strong>not</strong> limited to Spacemacs!). Check out <a href="https://orgmode.org/">Org Mode</a> and the <a href="https://orgmode.org/manual/index.html">Org Manual</a> to see what <strong>Org</strong> is all about. I got recommended years ago but didn’t have the time and leisure back then to really learn and use it.</p>
+<p>Currently I mainly use Org Mode in Spacemacs for note-taking and jotting down ideas.<br>For the next step I plan to use org-roam to build a knowledge base and I’ll also begin using Org as my main task manager after the holiday. For any of you that are into organizing tasks, I <em>highly recommend</em> you to try Org Mode, with whichever editor you prefer that supports it. </p>
+<p>For programmers or people that aspire to learn coding, Org-babel makes <strong><a href="https://www-cs-faculty.stanford.edu/~knuth/lp.html">literate programming</a></strong> possible by enabling the execution of source code within Org documents.</p>
+<h2 id="Existing-Amazing-Tutorials"><a href="#Existing-Amazing-Tutorials" class="headerlink" title="Existing Amazing Tutorials"></a>Existing Amazing Tutorials</h2><p><a href="https://out-of-cheese-error.netlify.app/spacemacs-config">OutOfCheeseError-An Annotated Spacemacs</a> is one of my favorites.</p>
+<p>To be continued…</p>
+]]></content>
+      <categories>
+        <category>tutorial</category>
+      </categories>
+      <tags>
+        <tag>spacemacs</tag>
+        <tag>org mode</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Salts</title>
     <url>/2023/12/01/Salts/</url>
-    <content><![CDATA[<p>December begins with snow and <em>love</em>, or this is how November ends, if you prefer.</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>December begins with snow and <em>love</em>, or this is how November ends, if you prefer.</p>
 <p>Some well-known people died, some unknown people were born. People snowflakes, but how amazing is this journey from heaven to earth. And is there a return?</p>
 ]]></content>
       <tags>
@@ -13,7 +59,7 @@
   <entry>
     <title>Spacemacs Tutorial</title>
     <url>/2023/12/17/Spacemacs-Tutorial/</url>
-    <content><![CDATA[<p>I’m learning Spacemacs (with <strong>Vim key bindings</strong> (check out this <a href="https://scaron.info/blog/vim-keyboard-shortcuts.html">blog post by Stéphane Caron</a>)) and would like to share some of my notes here.<br>For detailed instructions and a deeper understanding please refer to <a href="https://www.spacemacs.org/doc/QUICK_START.html">Spacemacs’ official documentation</a>.</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>I’m learning Spacemacs (with <strong>Vim key bindings</strong> (check out this <a href="https://scaron.info/blog/vim-keyboard-shortcuts.html">blog post by Stéphane Caron</a>)) and would like to share some of my notes here.<br>For detailed instructions and a deeper understanding please refer to <a href="https://www.spacemacs.org/doc/QUICK_START.html">Spacemacs’ official documentation</a>.</p>
 <h2 id="Modal-editing-with-Vim"><a href="#Modal-editing-with-Vim" class="headerlink" title="Modal editing with Vim"></a>Modal editing with Vim</h2><p><img src="/2023/12/17/Spacemacs-Tutorial/vim.jpg" alt="various editing modes"></p>
 <span id="more"></span>
 
@@ -172,23 +218,6 @@
       <tags>
         <tag>spacemacs</tag>
         <tag>vim</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Org Mode</title>
-    <url>/2023/12/19/Org-Mode/</url>
-    <content><![CDATA[<h1 id="Org"><a href="#Org" class="headerlink" title="Org"></a>Org</h1><p><img src="/2023/12/19/Org-Mode/org-mode-unicorn.svg"><br>This is a post dedicated to the <a href="https://www.spacemacs.org/layers/+emacs/org/README.html">Org Layer</a> in Spacemacs (Org Mode is a <a href="https://www.gnu.org/software/emacs/">GNU Emacs</a> mode, so <strong>not</strong> limited to Spacemacs!). Check out <a href="https://orgmode.org/">Org Mode</a> and the <a href="https://orgmode.org/manual/index.html">Org Manual</a> to see what <strong>Org</strong> is all about. I got recommended years ago but didn’t have the time and leisure back then to really learn and use it.</p>
-<p>Currently I mainly use Org Mode in Spacemacs for note-taking and jotting down ideas.<br>For the next step I plan to use org-roam to build a knowledge base and I’ll also begin using Org as my main task manager after the holiday. For any of you that are into organizing tasks, I <em>highly recommend</em> you to try Org Mode, with whichever editor you prefer that supports it. </p>
-<p>For programmers or people that aspire to learn coding, Org-babel makes <strong><a href="https://www-cs-faculty.stanford.edu/~knuth/lp.html">literate programming</a></strong> possible by enabling the execution of source code within Org documents.</p>
-<h2 id="Existing-Amazing-Tutorials"><a href="#Existing-Amazing-Tutorials" class="headerlink" title="Existing Amazing Tutorials"></a>Existing Amazing Tutorials</h2><p><a href="https://out-of-cheese-error.netlify.app/spacemacs-config">OutOfCheeseError-An Annotated Spacemacs</a> is one of my favorites.</p>
-<p>To be continued…</p>
-]]></content>
-      <categories>
-        <category>tutorial</category>
-      </categories>
-      <tags>
-        <tag>spacemacs</tag>
-        <tag>org mode</tag>
       </tags>
   </entry>
 </search>
